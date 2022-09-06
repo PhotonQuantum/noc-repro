@@ -1,0 +1,20 @@
+[package]
+name = "noc-repro"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[[bin]]
+name = "noc-repro-cli"
+path = "src/main.rs"
+
+[lib]
+name = "noc_repro"
+path = "src/lib.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[build-dependencies]
+glob = "0.3"
